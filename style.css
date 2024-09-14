@@ -1,0 +1,280 @@
+/* Reset dan pengaturan dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f7a8a1, #f1e4e6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Kontainer utama */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f7a8a1, #f1e4e6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Judul */
+h1 {
+    font-size: 2rem;
+    color: #00274d;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Paragraf */
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Galeri Foto */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Kotak Pesan Ucapan */
+.message-box {
+    padding: 15px;
+    background-color: #ffebcd;
+    border: 1px solid #deb887;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #6b4f4f;
+}
+
+/* Kontrol Audio */
+.audio-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.audio-controls button {
+    background-color: #00274d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.audio-controls button:hover {
+    background-color: #003366;
+}
+
+/* Pesan Cinta */
+.love-message {
+    background-color: #ffe4e1;
+    border: 1px solid #f4a460;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #d2691e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-out;
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .photo-gallery img {
+        width: 120px;
+        height: 80px;
+    }
+
+    .message-box {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .love-message {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .audio-controls {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px;
+    }
+
+    .audio-controls button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .photo-gallery img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .message-box {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .love-message {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .audio-controls {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+
+    .audio-controls button {
+        padding: 5px 10px;
+    }
+}
+/* Background Gradient dengan Efek Bokeh */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #f7a8a1, #f1e4e6);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Love Letter Section */
+.love-letter {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #f7a8a1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    text-align: center;
+    position: relative;
+}
+
+.love-letter::before {
+    content: "💌";
+    font-size: 2rem;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Interactive Love Tree */
+.love-tree {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.love-tree img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.love-tree img:hover {
+    transform: scale(1.1);
+}
+
+/* Romantic Icon Animations */
+.romantic-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.romantic-icons i {
+    font-size: 2rem;
+    color: #f7a8a1;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.romantic-icons i:hover {
+    transform: rotate(20deg);
+}
+
+/* Personalized Message */
+.personalized-message {
+    font-family: 'Dancing Script', cursive;
+    color: #d2691e;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    line-height: 1.4;
+}

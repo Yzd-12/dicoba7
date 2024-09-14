@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anjayy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <div class="sticky-navbar">
+        <h1>Selamanya Kamu</h1>
+    </div>
+<center>
+    <div class="container">
+         <p class="scroll-animate">Setiap kali aku melihatmu, ada rasa yang tumbuh perlahan. Mungkin belum saatnya, tapi aku percaya, suatu hari semesta akan mempertemukan kita di jalan yang sama.</p>
+        </center>
+    </div>
+        <div class="photo-gallery scroll-animate">
+            <img src="1.jpg" alt="Photo 1" class="tooltip" title="Foto 1">
+            <img src="2.jpg" alt="Photo 2" class="tooltip" title="Foto 2">
+            <img src="3.jpg" alt="Photo 3" class="tooltip" title="Foto 3">
+        </div>
+
+        <div class="message-box scroll-animate">
+            <p>Perasaan ini tidak terburu-buru. Aku menikmati setiap momen kecil bersamamu, meski hanya dari kejauhan. Mungkin takdir sedang menunggu waktu yang tepat untuk kita.</p>
+        </div>
+
+        <div class="love-letter scroll-animate">
+            <p>Aku yakin, pada akhirnya, segala yang indah akan datang ketika waktunya tiba. Dan sampai saat itu, aku akan tetap menyimpan rasa ini dengan tenang.</p>
+        </div>
+
+        <div class="love-tree scroll-animate">
+            <img src="4.jpg" alt="Love Tree">
+        </div>
+
+        <div class="romantic-icons scroll-animate">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-ring"></i>
+            <i class="fas fa-star"></i>
+        </div>
+
+        <div class="personalized-message scroll-animate">
+            <p >Di Sini Tetap Stay Menunggumu </p>
+        </div>
+
+        <div class="audio-controls">
+            <button id="play-button" onclick="toggleSound()">Putar</button>
+            <audio id="background-sound" loop>
+                <source src="dewi.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+<center>
+        <div class="footer">
+            <p>Sir pai Sang Guru Motivasi.</p>
+            <p>#Balikin sir pai kami</p>
+        </div>
+    </div>
+</center>
+    <script>
+        function toggleSound() {
+            var sound = document.getElementById('background-sound');
+            var button = document.getElementById('play-button');
+            if (sound.paused) {
+                sound.play();
+                button.textContent = 'Jeda';
+            } else {
+                sound.pause();
+                button.textContent = 'Putar';
+            }
+        }
+    </script>
+</body>
+</html>
